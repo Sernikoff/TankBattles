@@ -23,8 +23,7 @@ public abstract class AbstractTank implements Tank {
     protected ActionField af;
     protected BattleField bf;
 
-    protected Image img;
-    protected String imgName;
+    protected Image img[];
 
 
 
@@ -34,7 +33,7 @@ public abstract class AbstractTank implements Tank {
         this.x = x;
         this.y = y;
         this.direction = direction;
-
+        img = new Image[4];
     }
 
     public int getSpeed() {
@@ -45,6 +44,9 @@ public abstract class AbstractTank implements Tank {
         return direction;
     }
 
+    public void setDirection(Direction direction) {
+        this.direction = direction;
+    }
 
     public int getX() {
         return x;
@@ -205,8 +207,10 @@ public abstract class AbstractTank implements Tank {
 //        } else {
 //            g.fillRect(this.getX() + 30, this.getY() + 20, 34, 24);
 //        }
-
-        g.drawImage(img, x, y, new ImageObserver(){
+//        Graphics2D g2d = (Graphics2D) g.create();
+//		AlphaComposite alphaComposite = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.5f);
+//		g2d.setComposite(alphaComposite);
+        g.drawImage(img[getDirection().getId()], x, y, new ImageObserver(){
 
             @Override
             public boolean imageUpdate(Image img, int infoflags, int x, int y, int width, int height){

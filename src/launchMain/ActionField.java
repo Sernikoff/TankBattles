@@ -18,14 +18,18 @@ public class ActionField extends JPanel {
     private Direction direction;
 
     void runTheGame() throws Exception {
+          defender.fire();
+//        defender.fire();
+//        defender.fire();
+//        restartTigr();
+//        defender.fire();
+//        defender.fire();
 
-          defender.fire();
-          defender.fire();
-          defender.fire();
-          restartTigr();
-          defender.fire();
-          defender.fire();
-        agressorBT7.attacEagle();
+ //       agressorBT7.attacEagle();
+
+        defender.move();defender.move();defender.move();
+        defender.setDirection(Direction.DOWN);
+        defender.move();defender.move();defender.move();defender.move();
     //    System.out.println(Arrays.deepToString(bf.getMapDistances()));
     }
 

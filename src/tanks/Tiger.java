@@ -26,9 +26,11 @@ public class Tiger extends AbstractTank{
         armor=1;
         speed=10;
 
-        imgName = "RedTank.png";
         try {
-            img = ImageIO.read(new File(imgName));
+            img[0] = ImageIO.read(new File("Tiger_Up.jpeg"));
+            img[1] = ImageIO.read(new File("Tiger_Down.jpeg"));
+            img[2] = ImageIO.read(new File("Tiger_Left.jpeg"));
+            img[3] = ImageIO.read(new File("Tiger_Right.jpeg"));
         } catch (IOException e) {
             System.out.println("There is no file");
         }

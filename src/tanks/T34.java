@@ -6,6 +6,7 @@ import launchMain.BattleField;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.image.ImageObserver;
 import java.io.File;
 import java.io.IOException;
 
@@ -19,14 +20,31 @@ public class T34 extends AbstractTank{
         super(af, bf, x, y, direction);
         tankColor = new Color(0, 255, 0);
         towerColor = new Color(255, 0, 0);
-        speed=20;
+        speed=5;
 
-        imgName = "GreenTank.png";
         try {
-            img = ImageIO.read(new File(imgName));
+            img[0] = ImageIO.read(new File("T34_Up.jpeg"));
+            img[1] = ImageIO.read(new File("T34_Down.jpeg"));
+            img[2] = ImageIO.read(new File("T34_Left.jpeg"));
+            img[3] = ImageIO.read(new File("T34_Right.jpeg"));
         } catch (IOException e) {
             System.out.println("There is no file");
         }
+    }
+
+    public void draw(Graphics g){
+
+        Graphics2D g2d = (Graphics2D) g.create();
+        AlphaComposite alphaComposite = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.5f);
+        g2d.setComposite(alphaComposite);
+
+        g.drawImage(img[getDirection().getId()], x, y, new ImageObserver(){
+
+            @Override
+            public boolean imageUpdate(Image img, int infoflags, int x, int y, int width, int height){
+                return false;
+            }
+        });
     }
 
     public void destroy() throws Exception{
