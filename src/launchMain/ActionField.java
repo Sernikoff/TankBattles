@@ -18,18 +18,18 @@ public class ActionField extends JPanel {
     private Direction direction;
 
     void runTheGame() throws Exception {
-          defender.fire();
+ //         defender.fire();
 //        defender.fire();
 //        defender.fire();
 //        restartTigr();
 //        defender.fire();
 //        defender.fire();
 
- //       agressorBT7.attacEagle();
-
-        defender.move();defender.move();defender.move();
-        defender.setDirection(Direction.DOWN);
-        defender.move();defender.move();defender.move();defender.move();
+        agressorBT7.attacEagle();
+        agressor.attacTank(defender);
+//        defender.move();defender.move();defender.move();
+//        defender.setDirection(Direction.DOWN);
+//        defender.move();defender.move();defender.move();defender.move();
     //    System.out.println(Arrays.deepToString(bf.getMapDistances()));
     }
 
@@ -44,20 +44,20 @@ public class ActionField extends JPanel {
             return true;
         }
         //check aggressor
-        if (checkInterception(getQuadrant(agressor.getX(), agressor.getY()), str)){
-            bullet.destroy();
-            agressor.destroy();
-            repaint();
-            return true;
-        }
+//        if (checkInterception(getQuadrant(agressor.getX(), agressor.getY()), str)){
+//            bullet.destroy();
+//            agressor.destroy();
+//            repaint();
+//            return true;
+//        }
 
         //check defender
-//		if (checkInterception(getQuadrant(defender.getX(), defender.getY()), str)){
-//	//	            bullet.destroy();
-//		            defender.destroy();
-//		            restartTigr();
-//		            return true;
-//		}
+		if (checkInterception(getQuadrant(defender.getX(), defender.getY()), str)){
+		            bullet.destroy();
+		            defender.destroy();
+		  //          restartTigr();
+		            return true;
+		}
         return false;
     }
 
@@ -130,7 +130,7 @@ public class ActionField extends JPanel {
 
     public void processFire(Bullet bullet) throws Exception {
         this.bullet = bullet;
-
+        System.out.println("processFire(bullet); x = "+bullet.getBulletX()+" y = "+bullet.getBulletY()+" direction ="+bullet.getDirection());
         if (bullet.getDirection() == Direction.UP && bullet.getBulletY() > 0) {
             while (bullet.getBulletY() > -14) {
                 bullet.updateY(-1);
@@ -143,8 +143,11 @@ public class ActionField extends JPanel {
         } else if (bullet.getDirection() == Direction.DOWN &&  bullet.getBulletY()< 590) {
             while (bullet.getBulletY() < 590) {
                 bullet.updateY(1);
+                System.out.println("updateY = "+bullet.getBulletY());
                 repaint();
+             //   System.out.println("processInterception = "+processInterception());
                 if (processInterception()) {
+                    System.out.println("processInterception = "+processInterception());
                     bullet.destroy(); return;
                 }
                 Thread.sleep(3l);
@@ -205,7 +208,8 @@ public class ActionField extends JPanel {
         defender.draw(g);
         agressor.draw(g);
         agressorBT7.draw(g);
-        bullet.draw(g);
+        if (bullet!=null){
+        bullet.draw(g);}
 
     }
 }

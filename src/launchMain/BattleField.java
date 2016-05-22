@@ -2,6 +2,7 @@ package launchMain;
 
 import barrier.*;
 import interfaces.Drowable;
+import tanks.AbstractTank;
 
 import java.awt.*;
 import java.util.Arrays;
@@ -185,5 +186,47 @@ public class BattleField implements Drowable {
 
     public int[][] getMapDistances() {
         return mapDistances;
+    }
+
+    public int[][] distancesTank(AbstractTank tank){
+        int[][] distancTank = new int[9][9];
+        for (int i = 0; i<9; i++){
+            for (int j = 0; j<9; j++){
+                distancTank[i][j] = 88;
+            }
+        }
+
+        LinkedList<String> fil = new LinkedList<>();
+        int vTank = (int)tank.getY()/64;
+        int hTank = (int)tank.getX()/64;
+        distancTank[vTank][hTank] = 1;
+        fil.add(String.valueOf(vTank)+"_"+String.valueOf(hTank));
+        String v_h = fil.getFirst();
+        int j = 0;
+
+        do{
+            int v = Integer.valueOf(v_h.substring(0, v_h.indexOf("_")));
+            int h = Integer.valueOf(v_h.substring(v_h.indexOf("_") + 1));
+
+            if(h>0&& barrierWR(v, h-1) && distancTank[v][h-1]>(distancTank[v][h]+1+k_barrier(v, h-1))){
+                distancTank[v][h-1]=(distancTank[v][h]+1+k_barrier(v, h-1));
+                fil.add(String.valueOf(v)+"_"+String.valueOf(h-1));
+            }
+            if(v>0&&barrierWR(v-1, h) && distancTank[v-1][h]>(distancTank[v][h]+1+k_barrier(v-1, h))){
+                distancTank[v-1][h]=(distancTank[v][h]+1+k_barrier(v-1, h));
+                fil.add(String.valueOf(v-1)+"_"+String.valueOf(h));
+            }
+            if(h<8&& barrierWR(v, h+1) && distancTank[v][h+1]>(distancTank[v][h]+1+k_barrier(v, h+1))){
+                distancTank[v][h+1]=(distancTank[v][h]+1+k_barrier(v, h+1));
+                fil.add(String.valueOf(v)+"_"+String.valueOf(h+1));
+            }
+            if(v<8&& barrierWR(v+1, h) && distancTank[v+1][h]>(distancTank[v][h]+1+k_barrier(v+1, h))){
+                distancTank[v+1][h]=(distancTank[v][h]+1+k_barrier(v+1, h));
+                fil.add(String.valueOf(v+1)+"_"+String.valueOf(h));
+            }
+            j++;
+            v_h = fil.get(j);
+        } while (j<fil.size()-1);
+        return distancTank;
     }
 }

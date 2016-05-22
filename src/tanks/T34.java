@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class T34 extends AbstractTank{
     public T34(ActionField af, BattleField bf){
-        this(af, bf, 0, 64, Direction.RIGHT);
+        this(af, bf, 448, 512, Direction.UP);
     }
 
     public T34(ActionField af, BattleField bf, int x, int y, Direction direction){
@@ -37,7 +37,7 @@ public class T34 extends AbstractTank{
         Graphics2D g2d = (Graphics2D) g.create();
         AlphaComposite alphaComposite = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.5f);
         g2d.setComposite(alphaComposite);
-
+        System.out.println("t34 x= "+x +" y = "+y);
         g.drawImage(img[getDirection().getId()], x, y, new ImageObserver(){
 
             @Override
@@ -48,8 +48,8 @@ public class T34 extends AbstractTank{
     }
 
     public void destroy() throws Exception{
-        updateX(-100);
-        updateY(-100);
+        updateX(-1000);
+        updateY(-1000);
         af.repaint();
     }
 

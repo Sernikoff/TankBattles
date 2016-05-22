@@ -67,6 +67,7 @@ public abstract class AbstractTank implements Tank {
 
     public void fire() throws Exception{
         Bullet bullet = new Bullet((x+25), (y+25), direction);
+        System.out.println("af.processFire(bullet); x = "+x+" y = "+y+" direction ="+direction);
         af.processFire(bullet);
     }
 
@@ -127,9 +128,80 @@ public abstract class AbstractTank implements Tank {
             if (bf.scanQuadrant(v,h).equals("B") || bf.scanQuadrant(v,h).equals("E")){
                 fire();
             }
+
             move();
         }
     }
+
+    public void attacTank(AbstractTank tank) throws Exception {
+
+
+
+        while (tank.getX()!=-100) {
+            int y = this.y / 64;
+            int x = this.x / 64;
+            int v = y;
+            int h = x;
+            int nextX = -100;
+            int nextY = -100;
+            int min = 88;
+            if (y < 8) {
+                min = bf.distancesTank(tank)[y + 1][x];
+                v = y + 1;
+                h = x;
+                nextX = x;
+                nextY = y + 2;
+                direction = Direction.DOWN;
+            }
+            if (x > 0 && bf.distancesTank(tank)[y][x - 1] < min) {
+                min = bf.distancesTank(tank)[v][h - 1];
+                v = y;
+                h = x - 1;
+                nextX = x - 2;
+                nextY = y;
+                direction = Direction.LEFT;
+            }
+            if (y > 0 && bf.distancesTank(tank)[y - 1][x] < min) {
+                min = bf.distancesTank(tank)[v - 1][h];
+                v = y - 1;
+                h = x;
+                nextX = x;
+                nextY = y - 2;
+                direction = Direction.UP;
+            }
+            if (x < 8 && bf.distancesTank(tank)[y][x + 1] < min) {
+                min = bf.distancesTank(tank)[v][h + 1];
+                v = y;
+                h = x + 1;
+                nextX = x + 2;
+                nextY = y;
+                direction = Direction.RIGHT;
+            }
+
+            System.out.println("direction = " + direction);
+            System.out.println("bf.scanQuadrant(v,h).equals(\"B\")" + bf.scanQuadrant(v, h).equals("B"));
+
+            if (bf.scanQuadrant(v, h).equals("B") || bf.scanQuadrant(v, h).equals("E")) {
+                System.out.println("fire B");
+                fire();
+            }
+                if ((int) tank.getY() / 64 == v && (int) tank.getX() / 64 == h) {
+                    System.out.println("fire tank");
+                    fire();
+                }
+                if (bf.scanQuadrant(v, h).equals(" ")) {
+                    if ((int) tank.getY() / 64 == nextY && (int) tank.getX() / 64 == nextX) {
+                        fire();
+                    }
+                }
+
+
+
+                System.out.println("move");
+                move();
+            }
+        }
+
 
 
     public void moveToQuadrant(int v, int h) throws Exception {
