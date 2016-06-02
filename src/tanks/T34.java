@@ -20,7 +20,7 @@ public class T34 extends AbstractTank{
         super(af, bf, x, y, direction);
         tankColor = new Color(0, 255, 0);
         towerColor = new Color(255, 0, 0);
-        speed=5;
+        speed=10;
 
         try {
             img[0] = ImageIO.read(new File("T34_Up.jpeg"));

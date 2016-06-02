@@ -11,7 +11,7 @@ import java.io.IOException;
  */
 public class Water extends AbstractBarrier{
 
-    float alphaValue = 0.5f;
+    float alphaValue = 0.8f;
     int compositeRule = AlphaComposite.SRC_OVER;
     AlphaComposite ac;
 

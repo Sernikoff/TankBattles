@@ -1,5 +1,6 @@
 package launchMain;
 
+import barrier.Water;
 import interfaces.Direction;
 import tanks.*;
 
@@ -18,18 +19,25 @@ public class ActionField extends JPanel {
     private Direction direction;
 
     void runTheGame() throws Exception {
- //         defender.fire();
-//        defender.fire();
+      //    defender.fire();
+        //defender.fire();
 //        defender.fire();
 //        restartTigr();
 //        defender.fire();
 //        defender.fire();
 
         agressorBT7.attacEagle();
+
+        defender.move();defender.move();defender.move();
+        defender.setDirection(Direction.LEFT);
+        defender.move();defender.move();
+        defender.setDirection(Direction.UP);
+        defender.move();
+        defender.setDirection(Direction.LEFT);
+        defender.move(); defender.move();
+        defender.setDirection(Direction.DOWN);
+        defender.move(); defender.move();
         agressor.attacTank(defender);
-//        defender.move();defender.move();defender.move();
-//        defender.setDirection(Direction.DOWN);
-//        defender.move();defender.move();defender.move();defender.move();
     //    System.out.println(Arrays.deepToString(bf.getMapDistances()));
     }
 
@@ -51,7 +59,7 @@ public class ActionField extends JPanel {
 //            return true;
 //        }
 
-        //check defender
+//        check defender
 		if (checkInterception(getQuadrant(defender.getX(), defender.getY()), str)){
 		            bullet.destroy();
 		            defender.destroy();
@@ -208,8 +216,15 @@ public class ActionField extends JPanel {
         defender.draw(g);
         agressor.draw(g);
         agressorBT7.draw(g);
+        for (Object elem: bf.woters){
+            if(elem instanceof Water){
+                ((Water) elem).draw(g);
+        }}
         if (bullet!=null){
         bullet.draw(g);}
 
+
+        }
+
     }
-}
+

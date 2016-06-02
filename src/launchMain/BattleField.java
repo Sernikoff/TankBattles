@@ -16,6 +16,7 @@ public class BattleField implements Drowable {
     boolean COLORDED_MODE = false;
     private final int BF_WIDTH = 576;
     private final int BF_HEIGHT = 576;
+    LinkedList woters;
 
     public String[][] battleField = {
             {"B", "B", " ", "B", " ", "B", "B", " ", "B"},
@@ -133,6 +134,7 @@ public class BattleField implements Drowable {
     }
 
     public void draw(Graphics g){
+        woters = new LinkedList();
         int i = 0;
         Color cc;
         for (int v = 0; v < 9; v++) {
@@ -166,6 +168,7 @@ public class BattleField implements Drowable {
                 }
                 if (scanQuadrant(j, k).equals("W")) {
                     Water water =new Water(x, y);
+                    woters.add(water);
                     water.draw(g);
                 }
                 if (scanQuadrant(j, k).equals("R")) {
