@@ -6,38 +6,46 @@ import tanks.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.util.Arrays;
+
+
 
 
 public class ActionField extends JPanel {
     int speed = 10;
     private BattleField bf;
-    private T34 defender;
-    private Tiger agressor;
-    private BT7 agressorBT7;
+    private AbstractTank defender;
+    private AbstractTank agressorE;
+    private AbstractTank agressorD;
     private Bullet bullet;
     private Direction direction;
 
     void runTheGame() throws Exception {
-      //    defender.fire();
-        //defender.fire();
+//          defender.fire();
+//          defender.fire();
 //        defender.fire();
 //        restartTigr();
 //        defender.fire();
 //        defender.fire();
 
-        agressorBT7.attacEagle();
-
+//        agressorBT7.attacEagle();
+//
+        defender.setDirection(Direction.LEFT);
+        defender.move();
+        defender.setDirection(Direction.UP);
         defender.move();defender.move();defender.move();
         defender.setDirection(Direction.LEFT);
         defender.move();defender.move();
         defender.setDirection(Direction.UP);
         defender.move();
         defender.setDirection(Direction.LEFT);
-        defender.move(); defender.move();
+        defender.move();
         defender.setDirection(Direction.DOWN);
         defender.move(); defender.move();
-        agressor.attacTank(defender);
+      //  agressorD.attacTank(defender);
+        agressorE.attacEagle();
+        agressorD.attacTank(defender);
     //    System.out.println(Arrays.deepToString(bf.getMapDistances()));
     }
 
@@ -183,39 +191,71 @@ public class ActionField extends JPanel {
         }
     }
 
-    void restartTigr(){
+    public AbstractTank restartTigr(){
         String location = bf.getAgressorLocation();
-        agressor = new Tiger(this, bf, Integer.parseInt(location.split("_")[0]), Integer.parseInt(location.split("_")[1]), Direction.LEFT);
+        return new Tiger(this, bf, Integer.parseInt(location.split("_")[0]), Integer.parseInt(location.split("_")[1]), Direction.LEFT);
     }
 
-    void restartBT7(){
+    public AbstractTank restartBT7(){
         String location = bf.getAgressorLocation();
-        agressorBT7 = new BT7(this, bf, Integer.parseInt(location.split("_")[0]), Integer.parseInt(location.split("_")[1])-64, Direction.DOWN);
+        return new BT7(this, bf, Integer.parseInt(location.split("_")[0]), Integer.parseInt(location.split("_")[1])-64, Direction.DOWN);
+    }
+
+    public AbstractTank restartT34(){
+        String location = bf.getAgressorLocation();
+        return new T34(this, bf, Integer.parseInt(location.split("_")[0]), Integer.parseInt(location.split("_")[1])-64, Direction.DOWN);
     }
 
     public ActionField() throws Exception {
 
+        Menushka menu = new Menushka();
+
         bf = new BattleField();
-        defender = new T34(this, bf);
-        restartTigr();
-        restartBT7();
+ //       defender = new T34(this, bf);
+//        restartTigr();
+//        restartBT7();
 
         JFrame frame = new JFrame("BATTLE FIELD, DAY 2");
         frame.setLocation(750, 150);
-        frame.setMinimumSize(new Dimension(bf.getBF_WIDTH(), bf.getBF_HEIGHT() + 22));
+        frame.setMinimumSize(new Dimension(bf.getBF_WIDTH(), bf.getBF_HEIGHT() + 38));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+        frame.getContentPane().add(menu);
+
+
+        frame.pack();
+        frame.setVisible(true);
+        while(menu.getE()==null){}
+        init(menu.getE());
+        frame.getContentPane().removeAll();
         frame.getContentPane().add(this);
         frame.pack();
         frame.setVisible(true);
+        runTheGame();
     }
+
+    void init(ActionEvent e){
+       if(e.getActionCommand().equals("T34")){
+        defender = new T34(this, bf);
+        agressorD = restartTigr();
+        agressorE = restartBT7();
+        }
+
+        if(e.getActionCommand().equals("BT7")){
+            defender = new BT7(this, bf);
+            agressorD = restartTigr();
+            agressorE = restartT34();
+        }
+    }
+
 
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
         bf.draw(g);
         defender.draw(g);
-        agressor.draw(g);
-        agressorBT7.draw(g);
+        agressorE.draw(g);
+        agressorD.draw(g);
         for (Object elem: bf.woters){
             if(elem instanceof Water){
                 ((Water) elem).draw(g);
