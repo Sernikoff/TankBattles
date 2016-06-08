@@ -4,12 +4,14 @@ import barrier.Water;
 import interfaces.Direction;
 import tanks.*;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.File;
 import java.util.Arrays;
 
-
+import static java.awt.Color.BLUE;
 
 
 public class ActionField extends JPanel {
@@ -219,7 +221,7 @@ public class ActionField extends JPanel {
         frame.setLocation(750, 150);
         frame.setMinimumSize(new Dimension(bf.getBF_WIDTH(), bf.getBF_HEIGHT() + 38));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
+menu.setBackground(Color.CYAN);
         frame.getContentPane().add(menu);
 
 
