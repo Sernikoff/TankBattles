@@ -24,7 +24,7 @@ public class Tiger extends AbstractTank{
         tankColor = new Color(255, 0, 0);
         towerColor = new Color(0, 255, 0);
         armor=1;
-        speed=10;
+        speed=3;
 
         try {
             img[0] = ImageIO.read(new File("Tiger_Up.jpeg"));

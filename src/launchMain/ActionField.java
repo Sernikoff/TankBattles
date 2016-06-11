@@ -15,6 +15,9 @@ import static java.awt.Color.BLUE;
 
 
 public class ActionField extends JPanel {
+    JFrame frame;
+    Menushka menu;
+    GameOver gameOver;
     int speed = 10;
     private BattleField bf;
     private AbstractTank defender;
@@ -73,6 +76,9 @@ public class ActionField extends JPanel {
 		if (checkInterception(getQuadrant(defender.getX(), defender.getY()), str)){
 		            bullet.destroy();
 		            defender.destroy();
+            gameOver();
+
+
 		  //          restartTigr();
 		            return true;
 		}
@@ -148,7 +154,6 @@ public class ActionField extends JPanel {
 
     public void processFire(Bullet bullet) throws Exception {
         this.bullet = bullet;
-        System.out.println("processFire(bullet); x = "+bullet.getBulletX()+" y = "+bullet.getBulletY()+" direction ="+bullet.getDirection());
         if (bullet.getDirection() == Direction.UP && bullet.getBulletY() > 0) {
             while (bullet.getBulletY() > -14) {
                 bullet.updateY(-1);
@@ -161,11 +166,9 @@ public class ActionField extends JPanel {
         } else if (bullet.getDirection() == Direction.DOWN &&  bullet.getBulletY()< 590) {
             while (bullet.getBulletY() < 590) {
                 bullet.updateY(1);
-                System.out.println("updateY = "+bullet.getBulletY());
                 repaint();
              //   System.out.println("processInterception = "+processInterception());
                 if (processInterception()) {
-                    System.out.println("processInterception = "+processInterception());
                     bullet.destroy(); return;
                 }
                 Thread.sleep(3l);
@@ -210,37 +213,32 @@ public class ActionField extends JPanel {
 
     public ActionField() throws Exception {
 
-        Menushka menu = new Menushka();
-
         bf = new BattleField();
- //       defender = new T34(this, bf);
-//        restartTigr();
-//        restartBT7();
 
-        JFrame frame = new JFrame("BATTLE FIELD, DAY 2");
+        frame = new JFrame("BATTLE FIELD, DAY 2");
         frame.setLocation(750, 150);
         frame.setMinimumSize(new Dimension(bf.getBF_WIDTH(), bf.getBF_HEIGHT() + 38));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-menu.setBackground(Color.CYAN);
-        frame.getContentPane().add(menu);
+
+        menuGame();
 
 
-        frame.pack();
-        frame.setVisible(true);
-        while(menu.getE()==null){}
-        init(menu.getE());
-        frame.getContentPane().removeAll();
-        frame.getContentPane().add(this);
-        frame.pack();
-        frame.setVisible(true);
-        runTheGame();
+
     }
 
-    void init(ActionEvent e){
+
+    void init(ActionEvent e) throws Exception {
+        System.out.println("e.getActionCommand() = "+e.getActionCommand());
        if(e.getActionCommand().equals("T34")){
+           bf = new BattleField();
         defender = new T34(this, bf);
         agressorD = restartTigr();
         agressorE = restartBT7();
+           frame.getContentPane().removeAll();
+           frame.getContentPane().add(this);
+           frame.pack();
+           frame.setVisible(true);
+           runTheGame();
         }
 
         if(e.getActionCommand().equals("BT7")){
@@ -249,7 +247,30 @@ menu.setBackground(Color.CYAN);
             agressorE = restartT34();
         }
     }
+    void menuGame() throws Exception {
+        menu = new Menushka();
+        menu.setBackground(Color.CYAN);
+        frame.getContentPane().add(menu);
+        frame.pack();
+        frame.setVisible(true);
+        while(menu.getE()==null){}
+        init(menu.getE());
+    }
 
+    void gameOver() throws Exception {
+        frame.getContentPane().removeAll();
+        gameOver = new GameOver();
+        frame.getContentPane().add(gameOver);
+        System.out.println("gameOver getE = "+gameOver.getE());
+        while(gameOver.getE()==null){}
+        System.out.println("gameOver getE 1 = "+gameOver.getE());
+        init(menu.getE());
+
+    }
+
+    public AbstractTank getAgressorD() {
+        return agressorD;
+    }
 
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -269,4 +290,6 @@ menu.setBackground(Color.CYAN);
         }
 
     }
+
+
 

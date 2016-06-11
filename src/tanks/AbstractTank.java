@@ -67,7 +67,6 @@ public abstract class AbstractTank implements Tank {
 
     public void fire() throws Exception{
         Bullet bullet = new Bullet((x+25), (y+25), direction);
-        System.out.println("af.processFire(bullet); x = "+x+" y = "+y+" direction ="+direction);
         af.processFire(bullet);
     }
 
@@ -128,6 +127,10 @@ public abstract class AbstractTank implements Tank {
             if (bf.scanQuadrant(v,h).equals("B") || bf.scanQuadrant(v,h).equals("E")){
                 fire();
             }
+            if(((int)af.getAgressorD().getY()/64) ==v && ((int)af.getAgressorD().getX()/64)==h){
+                bf.getMapDistances()[v][h]=88;
+                attacEagle();
+            };
 
             move();
         }

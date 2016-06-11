@@ -21,7 +21,7 @@ public class BT7 extends AbstractTank {
         super(af, bf, x, y, direction);
         tankColor = new Color(0, 150, 0);
         towerColor = new Color(150, 0, 0);
-        speed = 7;
+        speed = 3;
 
         try {
             img[0] = ImageIO.read(new File("BT7_Up.jpeg"));

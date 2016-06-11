@@ -2,61 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faaf5dc0-a4cf-4243-8299-45d606810527" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BT7.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BT7_Down.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BT7_Left.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BT7_Right.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BT7_Up.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eagle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GreenT.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Kirpich.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RedT.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RedTank.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Skala.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/T34_Down.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/T34_Left.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/T34_Right.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/T34_Up.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tiger_Down.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tiger_Left.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tiger_Right.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tiger_Up.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Trava.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Woda.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/barrier/AbstractBarrier$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/barrier/AbstractBarrier.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/barrier/Brick.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/barrier/Eagle.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/barrier/Rock.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/barrier/Trava.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/barrier/Water$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/barrier/Water.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/interfaces/Destroyable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/interfaces/Direction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/interfaces/Drowable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/launchMain/ActionField.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/launchMain/BattleField.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/launchMain/Launcher.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/launchMain/Menushka.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/AbstractTank$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/AbstractTank.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/Action.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/BT7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/Bullet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/T34$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/T34.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/Tank.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/Tiger.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/СамТанк.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TankBattles.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/launchMain/Menushka.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TankBattles/launchMain/ActionField.class" afterPath="$PROJECT_DIR$/out/production/TankBattles/launchMain/ActionField.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TankBattles/launchMain/Menushka.class" afterPath="$PROJECT_DIR$/out/production/TankBattles/launchMain/Menushka.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TankBattles/tanks/AbstractTank$1.class" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/AbstractTank$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TankBattles/tanks/AbstractTank.class" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/AbstractTank.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TankBattles/tanks/BT7.class" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/BT7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TankBattles/tanks/T34.class" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/T34.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TankBattles/tanks/Tiger.class" afterPath="$PROJECT_DIR$/out/production/TankBattles/tanks/Tiger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/launchMain/ActionField.java" afterPath="$PROJECT_DIR$/src/launchMain/ActionField.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/launchMain/Menushka.java" afterPath="$PROJECT_DIR$/src/launchMain/Menushka.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tanks/AbstractTank.java" afterPath="$PROJECT_DIR$/src/tanks/AbstractTank.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tanks/BT7.java" afterPath="$PROJECT_DIR$/src/tanks/BT7.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tanks/T34.java" afterPath="$PROJECT_DIR$/src/tanks/T34.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tanks/Tiger.java" afterPath="$PROJECT_DIR$/src/tanks/Tiger.java" />
     </list>
     <ignored path="TankBattles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,61 +37,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GameOver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/launchMain/GameOver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ActionField.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/launchMain/ActionField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="223" column="29" selection-start-line="223" selection-start-column="29" selection-end-line="223" selection-end-column="29" />
+            <state relative-caret-position="1118">
+              <caret line="259" column="37" selection-start-line="259" selection-start-column="37" selection-end-line="259" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#processInterception#0;class#ActionField#0" expanded="false" />
                 <element signature="method#checkInterception#0;class#ActionField#0" expanded="false" />
                 <element signature="method#getQuadrant#0;class#ActionField#0" expanded="false" />
                 <element signature="method#processTurn#0;class#ActionField#0" expanded="false" />
                 <element signature="method#processMove#0;class#ActionField#0" expanded="false" />
-                <element signature="method#processFire#0;class#ActionField#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Launcher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/launchMain/Launcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Menushka.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/launchMain/Menushka.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="106" column="2" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3342#3343#0" expanded="true" />
-                <element signature="e#3366#3367#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tiger.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tanks/Tiger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1021#1022#0" expanded="false" />
-                <element signature="e#1049#1050#0" expanded="false" />
-                <element signature="e#1292#1293#0" expanded="false" />
-                <element signature="e#1326#1327#0" expanded="false" />
-                <element signature="e#1372#1373#0" expanded="false" />
-                <element signature="e#1396#1397#0" expanded="false" />
+                <element signature="method#restartTigr#0;class#ActionField#0" expanded="false" />
+                <element signature="method#restartBT7#0;class#ActionField#0" expanded="false" />
+                <element signature="method#restartT34#0;class#ActionField#0" expanded="false" />
+                <element signature="method#ActionField#0;class#ActionField#0" expanded="false" />
+                <element signature="method#init#0;class#ActionField#0" expanded="false" />
+                <element signature="method#menuGame#0;class#ActionField#0" expanded="false" />
+                <element signature="method#gameOver#0;class#ActionField#0" expanded="false" />
+                <element signature="method#paintComponent#0;class#ActionField#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -141,31 +75,61 @@
       <file leaf-file-name="BattleField.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/launchMain/BattleField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
                 <element signature="method#mapDistances#0;class#BattleField#0" expanded="false" />
                 <element signature="method#k_barrier#0;class#BattleField#0" expanded="false" />
                 <element signature="method#barrierWR#0;class#BattleField#0" expanded="false" />
-                <element signature="e#3263#3264#0" expanded="false" />
-                <element signature="e#3309#3310#0" expanded="false" />
-                <element signature="e#3351#3352#0" expanded="false" />
-                <element signature="e#3385#3386#0" expanded="false" />
-                <element signature="e#3417#3418#0" expanded="false" />
-                <element signature="e#3448#3449#0" expanded="false" />
-                <element signature="e#3481#3482#0" expanded="false" />
-                <element signature="e#3513#3514#0" expanded="false" />
-                <element signature="e#3663#3664#0" expanded="false" />
-                <element signature="e#3704#3705#0" expanded="false" />
-                <element signature="e#3737#3738#0" expanded="false" />
-                <element signature="e#3778#3779#0" expanded="false" />
-                <element signature="e#3811#3812#0" expanded="false" />
-                <element signature="e#3855#3856#0" expanded="false" />
                 <element signature="method#getAgressorLocation#0;class#BattleField#0" expanded="false" />
-                <element signature="e#6251#6252#0" expanded="false" />
-                <element signature="e#6286#6287#0" expanded="false" />
+                <element signature="method#draw#0;class#BattleField#0" expanded="false" />
                 <element signature="method#distancesTank#0;class#BattleField#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractTank.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tanks/AbstractTank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-576">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="method#AbstractTank#0;class#AbstractTank#0" expanded="false" />
+                <element signature="method#turn#0;class#AbstractTank#0" expanded="false" />
+                <element signature="method#move#0;class#AbstractTank#0" expanded="false" />
+                <element signature="method#fire#0;class#AbstractTank#0" expanded="false" />
+                <element signature="method#moveRandome#0;class#AbstractTank#0" expanded="false" />
+                <element signature="method#attacTank#0;class#AbstractTank#0" expanded="false" />
+                <element signature="method#moveToQuadrant#0;class#AbstractTank#0" expanded="false" />
+                <element signature="method#clean#0;class#AbstractTank#0" expanded="false" />
+                <element signature="method#draw#0;class#AbstractTank#0" expanded="false" />
+                <marker date="1465657684155" expanded="true" signature="7387:7955" placeholder="..." />
+                <marker date="1465657684155" expanded="true" signature="7958:8106" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="T34.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tanks/T34.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bullet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tanks/Bullet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="method#Bullet#0;class#Bullet#0" expanded="false" />
+                <element signature="method#destroy#0;class#Bullet#0" expanded="false" />
+                <element signature="method#draw#0;class#Bullet#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -174,38 +138,11 @@
       <file leaf-file-name="BT7.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tanks/BT7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+            <state relative-caret-position="221">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#333#334#0" expanded="false" />
-                <element signature="e#385#386#0" expanded="false" />
                 <element signature="method#destroy#0;class#BT7#0" expanded="false" />
-                <element signature="e#1662#1663#0" expanded="false" />
-                <element signature="e#1696#1697#0" expanded="false" />
-                <element signature="e#1742#1743#0" expanded="false" />
-                <element signature="e#1766#1767#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="T34.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tanks/T34.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="59" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tanks/Tank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -248,16 +185,17 @@
         <option value="$PROJECT_DIR$/src/barrier/Rock.java" />
         <option value="$PROJECT_DIR$/src/barrier/Trava.java" />
         <option value="$PROJECT_DIR$/src/barrier/Eagle.java" />
-        <option value="$PROJECT_DIR$/src/tanks/Tiger.java" />
         <option value="$PROJECT_DIR$/src/interfaces/Direction.java" />
-        <option value="$PROJECT_DIR$/src/tanks/BT7.java" />
-        <option value="$PROJECT_DIR$/src/tanks/AbstractTank.java" />
         <option value="$PROJECT_DIR$/src/launchMain/BattleField.java" />
-        <option value="$PROJECT_DIR$/src/tanks/T34.java" />
         <option value="$PROJECT_DIR$/src/barrier/Water.java" />
-        <option value="$PROJECT_DIR$/src/launchMain/Launcher.java" />
-        <option value="$PROJECT_DIR$/src/launchMain/ActionField.java" />
         <option value="$PROJECT_DIR$/src/launchMain/Menushka.java" />
+        <option value="$PROJECT_DIR$/src/launchMain/Launcher.java" />
+        <option value="$PROJECT_DIR$/src/tanks/BT7.java" />
+        <option value="$PROJECT_DIR$/src/tanks/Tiger.java" />
+        <option value="$PROJECT_DIR$/src/tanks/AbstractTank.java" />
+        <option value="$PROJECT_DIR$/src/launchMain/ActionField.java" />
+        <option value="$PROJECT_DIR$/src/launchMain/GameOver.java" />
+        <option value="$PROJECT_DIR$/src/tanks/T34.java" />
       </list>
     </option>
   </component>
@@ -291,9 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -361,31 +296,12 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TankBattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TankBattles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="barrier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -709,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1465214330734</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="TBMenu">
+      <created>1465407603479</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1465407603479</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -741,6 +664,32 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33259913" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32296136" sideWeight="0.50385356" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21145375" sideWeight="0.49614644" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2173913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24949698" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3982684" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -756,7 +705,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TankB-Woter" />
     <MESSAGE value="TankB-destroy_defender" />
-    <option name="LAST_COMMIT_MESSAGE" value="TankB-destroy_defender" />
+    <MESSAGE value="TBMenu" />
+    <option name="LAST_COMMIT_MESSAGE" value="TBMenu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -774,42 +724,54 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/launchMain/ActionField.java</url>
-          <line>110</line>
+          <line>116</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/launchMain/ActionField.java</url>
-          <line>111</line>
+          <line>117</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/launchMain/ActionField.java</url>
-          <line>56</line>
+          <line>88</line>
           <properties />
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/launchMain/BattleField.java</url>
-          <line>189</line>
-          <properties class="launchMain.BattleField" method="getMapDistances" />
-          <option name="timeStamp" value="1" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/launchMain/ActionField.java</url>
+          <line>201</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tanks/AbstractTank.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/launchMain/ActionField.java</url>
-          <line>113</line>
+          <line>119</line>
           <properties class="launchMain.ActionField" method="processMove" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/tanks/AbstractTank.java</url>
-          <line>252</line>
+          <line>255</line>
           <properties class="tanks.AbstractTank" method="clean" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/tanks/Bullet.java</url>
+          <line>37</line>
+          <properties class="tanks.Bullet" method="setDirection" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -818,23 +780,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tanks/BT7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#333#334#0" expanded="false" />
-            <element signature="e#385#386#0" expanded="false" />
-            <element signature="method#destroy#0;class#BT7#0" expanded="false" />
-            <element signature="e#1662#1663#0" expanded="false" />
-            <element signature="e#1696#1697#0" expanded="false" />
-            <element signature="e#1742#1743#0" expanded="false" />
-            <element signature="e#1766#1767#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tanks/Action.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -847,35 +792,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#AbstractTank#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#837#838#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-            <element signature="e#904#905#0" expanded="false" />
-            <element signature="e#936#937#0" expanded="false" />
-            <element signature="e#989#990#0" expanded="false" />
-            <element signature="e#1031#1032#0" expanded="false" />
-            <element signature="e#1056#1057#0" expanded="false" />
-            <element signature="e#1080#1081#0" expanded="false" />
-            <element signature="e#1105#1106#0" expanded="false" />
-            <element signature="e#1129#1130#0" expanded="false" />
             <element signature="method#turn#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#move#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#fire#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#1578#1579#0" expanded="false" />
-            <element signature="e#1605#1606#0" expanded="false" />
-            <element signature="e#1638#1639#0" expanded="false" />
-            <element signature="e#1665#1666#0" expanded="false" />
             <element signature="method#moveRandome#0;class#AbstractTank#0" expanded="false" />
-            <element signature="method#attacEagle#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#attacTank#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#moveToQuadrant#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#clean#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#draw#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#8249#8250#0" expanded="false" />
-            <element signature="e#8293#8294#0" expanded="false" />
-            <marker date="1463931400533" expanded="true" signature="7295:7863" placeholder="..." />
-            <marker date="1463931400533" expanded="true" signature="7866:8014" placeholder="..." />
+            <marker date="1465657684155" expanded="true" signature="7387:7955" placeholder="..." />
+            <marker date="1465657684155" expanded="true" signature="7958:8106" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -921,13 +848,18 @@
         <state relative-caret-position="85">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#processInterception#0;class#ActionField#0" expanded="false" />
             <element signature="method#checkInterception#0;class#ActionField#0" expanded="false" />
             <element signature="method#getQuadrant#0;class#ActionField#0" expanded="false" />
             <element signature="method#processTurn#0;class#ActionField#0" expanded="false" />
             <element signature="method#processMove#0;class#ActionField#0" expanded="false" />
-            <element signature="method#processFire#0;class#ActionField#0" expanded="false" />
+            <element signature="method#restartTigr#0;class#ActionField#0" expanded="false" />
+            <element signature="method#restartBT7#0;class#ActionField#0" expanded="false" />
+            <element signature="method#restartT34#0;class#ActionField#0" expanded="false" />
+            <element signature="method#ActionField#0;class#ActionField#0" expanded="false" />
+            <element signature="method#init#0;class#ActionField#0" expanded="false" />
+            <element signature="method#menuGame#0;class#ActionField#0" expanded="false" />
+            <element signature="method#gameOver#0;class#ActionField#0" expanded="false" />
+            <element signature="method#paintComponent#0;class#ActionField#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -937,27 +869,11 @@
         <state relative-caret-position="221">
           <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#mapDistances#0;class#BattleField#0" expanded="false" />
             <element signature="method#k_barrier#0;class#BattleField#0" expanded="false" />
             <element signature="method#barrierWR#0;class#BattleField#0" expanded="false" />
-            <element signature="e#3263#3264#0" expanded="false" />
-            <element signature="e#3309#3310#0" expanded="false" />
-            <element signature="e#3351#3352#0" expanded="false" />
-            <element signature="e#3385#3386#0" expanded="false" />
-            <element signature="e#3417#3418#0" expanded="false" />
-            <element signature="e#3448#3449#0" expanded="false" />
-            <element signature="e#3481#3482#0" expanded="false" />
-            <element signature="e#3513#3514#0" expanded="false" />
-            <element signature="e#3663#3664#0" expanded="false" />
-            <element signature="e#3704#3705#0" expanded="false" />
-            <element signature="e#3737#3738#0" expanded="false" />
-            <element signature="e#3778#3779#0" expanded="false" />
-            <element signature="e#3811#3812#0" expanded="false" />
-            <element signature="e#3855#3856#0" expanded="false" />
             <element signature="method#getAgressorLocation#0;class#BattleField#0" expanded="false" />
-            <element signature="e#6251#6252#0" expanded="false" />
-            <element signature="e#6286#6287#0" expanded="false" />
+            <element signature="method#draw#0;class#BattleField#0" expanded="false" />
             <element signature="method#distancesTank#0;class#BattleField#0" expanded="false" />
           </folding>
         </state>
@@ -968,14 +884,7 @@
         <state relative-caret-position="85">
           <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#333#334#0" expanded="false" />
-            <element signature="e#385#386#0" expanded="false" />
             <element signature="method#destroy#0;class#BT7#0" expanded="false" />
-            <element signature="e#1662#1663#0" expanded="false" />
-            <element signature="e#1696#1697#0" expanded="false" />
-            <element signature="e#1742#1743#0" expanded="false" />
-            <element signature="e#1766#1767#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -992,35 +901,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#AbstractTank#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#837#838#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-            <element signature="e#904#905#0" expanded="false" />
-            <element signature="e#936#937#0" expanded="false" />
-            <element signature="e#989#990#0" expanded="false" />
-            <element signature="e#1031#1032#0" expanded="false" />
-            <element signature="e#1056#1057#0" expanded="false" />
-            <element signature="e#1080#1081#0" expanded="false" />
-            <element signature="e#1105#1106#0" expanded="false" />
-            <element signature="e#1129#1130#0" expanded="false" />
             <element signature="method#turn#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#move#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#fire#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#1578#1579#0" expanded="false" />
-            <element signature="e#1605#1606#0" expanded="false" />
-            <element signature="e#1638#1639#0" expanded="false" />
-            <element signature="e#1665#1666#0" expanded="false" />
             <element signature="method#moveRandome#0;class#AbstractTank#0" expanded="false" />
-            <element signature="method#attacEagle#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#attacTank#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#moveToQuadrant#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#clean#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#draw#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#8249#8250#0" expanded="false" />
-            <element signature="e#8293#8294#0" expanded="false" />
-            <marker date="1463931400533" expanded="true" signature="7295:7863" placeholder="..." />
-            <marker date="1463931400533" expanded="true" signature="7866:8014" placeholder="..." />
+            <marker date="1465657684155" expanded="true" signature="7387:7955" placeholder="..." />
+            <marker date="1465657684155" expanded="true" signature="7958:8106" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1066,13 +957,18 @@
         <state relative-caret-position="408">
           <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#processInterception#0;class#ActionField#0" expanded="false" />
             <element signature="method#checkInterception#0;class#ActionField#0" expanded="false" />
             <element signature="method#getQuadrant#0;class#ActionField#0" expanded="false" />
             <element signature="method#processTurn#0;class#ActionField#0" expanded="false" />
             <element signature="method#processMove#0;class#ActionField#0" expanded="false" />
-            <element signature="method#processFire#0;class#ActionField#0" expanded="false" />
+            <element signature="method#restartTigr#0;class#ActionField#0" expanded="false" />
+            <element signature="method#restartBT7#0;class#ActionField#0" expanded="false" />
+            <element signature="method#restartT34#0;class#ActionField#0" expanded="false" />
+            <element signature="method#ActionField#0;class#ActionField#0" expanded="false" />
+            <element signature="method#init#0;class#ActionField#0" expanded="false" />
+            <element signature="method#menuGame#0;class#ActionField#0" expanded="false" />
+            <element signature="method#gameOver#0;class#ActionField#0" expanded="false" />
+            <element signature="method#paintComponent#0;class#ActionField#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1082,27 +978,11 @@
         <state relative-caret-position="221">
           <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#mapDistances#0;class#BattleField#0" expanded="false" />
             <element signature="method#k_barrier#0;class#BattleField#0" expanded="false" />
             <element signature="method#barrierWR#0;class#BattleField#0" expanded="false" />
-            <element signature="e#3263#3264#0" expanded="false" />
-            <element signature="e#3309#3310#0" expanded="false" />
-            <element signature="e#3351#3352#0" expanded="false" />
-            <element signature="e#3385#3386#0" expanded="false" />
-            <element signature="e#3417#3418#0" expanded="false" />
-            <element signature="e#3448#3449#0" expanded="false" />
-            <element signature="e#3481#3482#0" expanded="false" />
-            <element signature="e#3513#3514#0" expanded="false" />
-            <element signature="e#3663#3664#0" expanded="false" />
-            <element signature="e#3704#3705#0" expanded="false" />
-            <element signature="e#3737#3738#0" expanded="false" />
-            <element signature="e#3778#3779#0" expanded="false" />
-            <element signature="e#3811#3812#0" expanded="false" />
-            <element signature="e#3855#3856#0" expanded="false" />
             <element signature="method#getAgressorLocation#0;class#BattleField#0" expanded="false" />
-            <element signature="e#6251#6252#0" expanded="false" />
-            <element signature="e#6286#6287#0" expanded="false" />
+            <element signature="method#draw#0;class#BattleField#0" expanded="false" />
             <element signature="method#distancesTank#0;class#BattleField#0" expanded="false" />
           </folding>
         </state>
@@ -1113,14 +993,7 @@
         <state relative-caret-position="391">
           <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#333#334#0" expanded="false" />
-            <element signature="e#385#386#0" expanded="false" />
             <element signature="method#destroy#0;class#BT7#0" expanded="false" />
-            <element signature="e#1662#1663#0" expanded="false" />
-            <element signature="e#1696#1697#0" expanded="false" />
-            <element signature="e#1742#1743#0" expanded="false" />
-            <element signature="e#1766#1767#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1130,35 +1003,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#AbstractTank#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#837#838#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-            <element signature="e#904#905#0" expanded="false" />
-            <element signature="e#936#937#0" expanded="false" />
-            <element signature="e#989#990#0" expanded="false" />
-            <element signature="e#1031#1032#0" expanded="false" />
-            <element signature="e#1056#1057#0" expanded="false" />
-            <element signature="e#1080#1081#0" expanded="false" />
-            <element signature="e#1105#1106#0" expanded="false" />
-            <element signature="e#1129#1130#0" expanded="false" />
             <element signature="method#turn#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#move#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#fire#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#1578#1579#0" expanded="false" />
-            <element signature="e#1605#1606#0" expanded="false" />
-            <element signature="e#1638#1639#0" expanded="false" />
-            <element signature="e#1665#1666#0" expanded="false" />
             <element signature="method#moveRandome#0;class#AbstractTank#0" expanded="false" />
-            <element signature="method#attacEagle#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#attacTank#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#moveToQuadrant#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#clean#0;class#AbstractTank#0" expanded="false" />
             <element signature="method#draw#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#8249#8250#0" expanded="false" />
-            <element signature="e#8293#8294#0" expanded="false" />
-            <marker date="1463931400533" expanded="true" signature="7295:7863" placeholder="..." />
-            <marker date="1463931400533" expanded="true" signature="7866:8014" placeholder="..." />
+            <marker date="1465657684155" expanded="true" signature="7387:7955" placeholder="..." />
+            <marker date="1465657684155" expanded="true" signature="7958:8106" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1228,13 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tanks/Bullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/barrier/AbstractBarrier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1281,121 +1129,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tanks/AbstractTank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="135" column="62" selection-start-line="135" selection-start-column="62" selection-end-line="135" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#AbstractTank#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#837#838#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-            <element signature="e#904#905#0" expanded="false" />
-            <element signature="e#936#937#0" expanded="false" />
-            <element signature="e#989#990#0" expanded="false" />
-            <element signature="e#1031#1032#0" expanded="false" />
-            <element signature="e#1056#1057#0" expanded="false" />
-            <element signature="e#1080#1081#0" expanded="false" />
-            <element signature="e#1105#1106#0" expanded="false" />
-            <element signature="e#1129#1130#0" expanded="false" />
-            <element signature="method#turn#0;class#AbstractTank#0" expanded="false" />
-            <element signature="method#move#0;class#AbstractTank#0" expanded="false" />
-            <element signature="method#fire#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#1578#1579#0" expanded="false" />
-            <element signature="e#1605#1606#0" expanded="false" />
-            <element signature="e#1638#1639#0" expanded="false" />
-            <element signature="e#1665#1666#0" expanded="false" />
-            <element signature="method#moveRandome#0;class#AbstractTank#0" expanded="false" />
-            <element signature="method#attacEagle#0;class#AbstractTank#0" expanded="false" />
-            <element signature="method#attacTank#0;class#AbstractTank#0" expanded="false" />
-            <element signature="method#moveToQuadrant#0;class#AbstractTank#0" expanded="false" />
-            <element signature="method#clean#0;class#AbstractTank#0" expanded="false" />
-            <element signature="method#draw#0;class#AbstractTank#0" expanded="false" />
-            <element signature="e#8249#8250#0" expanded="false" />
-            <element signature="e#8293#8294#0" expanded="false" />
-            <marker date="1463931400533" expanded="true" signature="7295:7863" placeholder="..." />
-            <marker date="1463931400533" expanded="true" signature="7866:8014" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tanks/Action.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tanks/BT7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#333#334#0" expanded="false" />
-            <element signature="e#385#386#0" expanded="false" />
-            <element signature="method#destroy#0;class#BT7#0" expanded="false" />
-            <element signature="e#1662#1663#0" expanded="false" />
-            <element signature="e#1696#1697#0" expanded="false" />
-            <element signature="e#1742#1743#0" expanded="false" />
-            <element signature="e#1766#1767#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tanks/Tiger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1021#1022#0" expanded="false" />
-            <element signature="e#1049#1050#0" expanded="false" />
-            <element signature="e#1292#1293#0" expanded="false" />
-            <element signature="e#1326#1327#0" expanded="false" />
-            <element signature="e#1372#1373#0" expanded="false" />
-            <element signature="e#1396#1397#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/launchMain/BattleField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#mapDistances#0;class#BattleField#0" expanded="false" />
-            <element signature="method#k_barrier#0;class#BattleField#0" expanded="false" />
-            <element signature="method#barrierWR#0;class#BattleField#0" expanded="false" />
-            <element signature="e#3263#3264#0" expanded="false" />
-            <element signature="e#3309#3310#0" expanded="false" />
-            <element signature="e#3351#3352#0" expanded="false" />
-            <element signature="e#3385#3386#0" expanded="false" />
-            <element signature="e#3417#3418#0" expanded="false" />
-            <element signature="e#3448#3449#0" expanded="false" />
-            <element signature="e#3481#3482#0" expanded="false" />
-            <element signature="e#3513#3514#0" expanded="false" />
-            <element signature="e#3663#3664#0" expanded="false" />
-            <element signature="e#3704#3705#0" expanded="false" />
-            <element signature="e#3737#3738#0" expanded="false" />
-            <element signature="e#3778#3779#0" expanded="false" />
-            <element signature="e#3811#3812#0" expanded="false" />
-            <element signature="e#3855#3856#0" expanded="false" />
-            <element signature="method#getAgressorLocation#0;class#BattleField#0" expanded="false" />
-            <element signature="e#6251#6252#0" expanded="false" />
-            <element signature="e#6286#6287#0" expanded="false" />
-            <element signature="method#distancesTank#0;class#BattleField#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/launchMain/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1403,31 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/launchMain/ActionField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="223" column="29" selection-start-line="223" selection-start-column="29" selection-end-line="223" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#processInterception#0;class#ActionField#0" expanded="false" />
-            <element signature="method#checkInterception#0;class#ActionField#0" expanded="false" />
-            <element signature="method#getQuadrant#0;class#ActionField#0" expanded="false" />
-            <element signature="method#processTurn#0;class#ActionField#0" expanded="false" />
-            <element signature="method#processMove#0;class#ActionField#0" expanded="false" />
-            <element signature="method#processFire#0;class#ActionField#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tanks/T34.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="59" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1441,15 +1153,123 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tanks/BT7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding>
+            <element signature="method#destroy#0;class#BT7#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/launchMain/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/launchMain/Menushka.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="106" column="2" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
+        <state relative-caret-position="34">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tanks/Tiger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tanks/AbstractTank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-576">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="method#AbstractTank#0;class#AbstractTank#0" expanded="false" />
+            <element signature="method#turn#0;class#AbstractTank#0" expanded="false" />
+            <element signature="method#move#0;class#AbstractTank#0" expanded="false" />
+            <element signature="method#fire#0;class#AbstractTank#0" expanded="false" />
+            <element signature="method#moveRandome#0;class#AbstractTank#0" expanded="false" />
+            <element signature="method#attacTank#0;class#AbstractTank#0" expanded="false" />
+            <element signature="method#moveToQuadrant#0;class#AbstractTank#0" expanded="false" />
+            <element signature="method#clean#0;class#AbstractTank#0" expanded="false" />
+            <element signature="method#draw#0;class#AbstractTank#0" expanded="false" />
+            <marker date="1465657684155" expanded="true" signature="7387:7955" placeholder="..." />
+            <marker date="1465657684155" expanded="true" signature="7958:8106" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tanks/Bullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="method#Bullet#0;class#Bullet#0" expanded="false" />
+            <element signature="method#destroy#0;class#Bullet#0" expanded="false" />
+            <element signature="method#draw#0;class#Bullet#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/launchMain/BattleField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="method#mapDistances#0;class#BattleField#0" expanded="false" />
+            <element signature="method#k_barrier#0;class#BattleField#0" expanded="false" />
+            <element signature="method#barrierWR#0;class#BattleField#0" expanded="false" />
+            <element signature="method#getAgressorLocation#0;class#BattleField#0" expanded="false" />
+            <element signature="method#draw#0;class#BattleField#0" expanded="false" />
+            <element signature="method#distancesTank#0;class#BattleField#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/launchMain/GameOver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3342#3343#0" expanded="true" />
-            <element signature="e#3366#3367#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/launchMain/ActionField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1118">
+          <caret line="259" column="37" selection-start-line="259" selection-start-column="37" selection-end-line="259" selection-end-column="37" />
+          <folding>
+            <element signature="method#checkInterception#0;class#ActionField#0" expanded="false" />
+            <element signature="method#getQuadrant#0;class#ActionField#0" expanded="false" />
+            <element signature="method#processTurn#0;class#ActionField#0" expanded="false" />
+            <element signature="method#processMove#0;class#ActionField#0" expanded="false" />
+            <element signature="method#restartTigr#0;class#ActionField#0" expanded="false" />
+            <element signature="method#restartBT7#0;class#ActionField#0" expanded="false" />
+            <element signature="method#restartT34#0;class#ActionField#0" expanded="false" />
+            <element signature="method#ActionField#0;class#ActionField#0" expanded="false" />
+            <element signature="method#init#0;class#ActionField#0" expanded="false" />
+            <element signature="method#menuGame#0;class#ActionField#0" expanded="false" />
+            <element signature="method#gameOver#0;class#ActionField#0" expanded="false" />
+            <element signature="method#paintComponent#0;class#ActionField#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tanks/T34.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>

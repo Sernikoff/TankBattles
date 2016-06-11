@@ -7,11 +7,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 import static javax.swing.SwingConstants.CENTER;
-import static javax.swing.SwingConstants.NORTH;
-
-/**
- * Created by Сергей on 06.06.2016.
- */
 public class Menushka extends JPanel implements ActionListener {
     ActionEvent f;
     ActionEvent e;

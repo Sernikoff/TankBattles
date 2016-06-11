@@ -20,7 +20,7 @@ public class T34 extends AbstractTank{
         super(af, bf, x, y, direction);
         tankColor = new Color(0, 255, 0);
         towerColor = new Color(255, 0, 0);
-        speed=10;
+        speed=7;
 
         try {
             img[0] = ImageIO.read(new File("T34_Up.jpeg"));
@@ -37,7 +37,6 @@ public class T34 extends AbstractTank{
         Graphics2D g2d = (Graphics2D) g.create();
         AlphaComposite alphaComposite = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.5f);
         g2d.setComposite(alphaComposite);
-        System.out.println("t34 x= "+x +" y = "+y);
         g.drawImage(img[getDirection().getId()], x, y, new ImageObserver(){
 
             @Override
