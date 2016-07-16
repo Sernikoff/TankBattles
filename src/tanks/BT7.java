@@ -19,6 +19,7 @@ public class BT7 extends AbstractTank {
 
     public BT7(ActionField af, BattleField bf, int x, int y, Direction direction) {
         super(af, bf, x, y, direction);
+        name = "BT7";
         tankColor = new Color(0, 150, 0);
         towerColor = new Color(150, 0, 0);
         speed = 3;

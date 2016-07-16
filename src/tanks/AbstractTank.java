@@ -14,6 +14,7 @@ import java.util.Random;
 public abstract class AbstractTank implements Tank {
 
     protected int speed;
+    protected String name;
     protected Direction direction;
     protected int x;
     protected int y;
@@ -56,6 +57,9 @@ public abstract class AbstractTank implements Tank {
         return y;
     }
 
+    public String getName() {
+        return name;
+    }
 
     public void turn(Direction direction) throws Exception{
         af.processTurn(this);
@@ -67,7 +71,9 @@ public abstract class AbstractTank implements Tank {
 
     public void fire() throws Exception{
         Bullet bullet = new Bullet((x+25), (y+25), direction);
+
         af.processFire(bullet);
+        af.getRegistrator().addList(name+":Fire");
     }
 
     public void updateX(int x){

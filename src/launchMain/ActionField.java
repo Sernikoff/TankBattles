@@ -25,6 +25,7 @@ public class ActionField extends JPanel {
     private AbstractTank agressorD;
     private Bullet bullet;
     private Direction direction;
+    private Registrator registrator;
 
     void runTheGame() throws Exception {
 //          defender.fire();
@@ -36,6 +37,8 @@ public class ActionField extends JPanel {
 
 //        agressorBT7.attacEagle();
 //
+
+
         defender.setDirection(Direction.LEFT);
         defender.move();
         defender.setDirection(Direction.UP);
@@ -52,6 +55,7 @@ public class ActionField extends JPanel {
         agressorE.attacEagle();
         agressorD.attacTank(defender);
     //    System.out.println(Arrays.deepToString(bf.getMapDistances()));
+
     }
 
 
@@ -114,6 +118,7 @@ public class ActionField extends JPanel {
     }
 
     public void processTurn(AbstractTank tank) throws Exception{
+        registrator.addList(tank.getName()+":"+tank.getDirection());
         repaint();
     }
 
@@ -124,6 +129,8 @@ public class ActionField extends JPanel {
         int tankY = tank.getY();
         int tankX = tank.getX();
         int speed = tank.getSpeed();
+
+
 
         // check limits x: 0, 513; y: 0, 513
         if ((direction == Direction.UP && tankY == 0) || (direction == Direction.DOWN && tankY >= 512)
@@ -149,12 +156,15 @@ public class ActionField extends JPanel {
             repaint();
             Thread.sleep(speed);
         }
+
+        registrator.addList(tank.getName()+":move");
     }
 
 
     public void processFire(Bullet bullet) throws Exception {
         this.bullet = bullet;
-        if (bullet.getDirection() == Direction.UP && bullet.getBulletY() > 0) {
+
+            if (bullet.getDirection() == Direction.UP && bullet.getBulletY() > 0) {
             while (bullet.getBulletY() > -14) {
                 bullet.updateY(-1);
                 repaint();
@@ -213,6 +223,10 @@ public class ActionField extends JPanel {
 
     public ActionField() throws Exception {
 
+        registrator = new Registrator();
+        registrator.addList("Start Game");
+        registrator.pushToFile();
+
         bf = new BattleField();
 
         frame = new JFrame("BATTLE FIELD, DAY 2");
@@ -221,9 +235,6 @@ public class ActionField extends JPanel {
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         menuGame();
-
-
-
     }
 
 
@@ -258,6 +269,7 @@ public class ActionField extends JPanel {
     }
 
     void gameOver() throws Exception {
+        registrator.pushToFile();
         frame.getContentPane().removeAll();
         gameOver = new GameOver();
         frame.getContentPane().add(gameOver);
@@ -289,7 +301,10 @@ public class ActionField extends JPanel {
 
         }
 
+    public Registrator getRegistrator() {
+        return registrator;
     }
+}
 
 
 
