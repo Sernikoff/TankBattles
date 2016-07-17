@@ -53,6 +53,18 @@ public abstract class AbstractTank implements Tank {
         return x;
     }
 
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public void setBf(BattleField bf) {
+        this.bf = bf;
+    }
+
     public int getY() {
         return y;
     }
@@ -62,6 +74,7 @@ public abstract class AbstractTank implements Tank {
     }
 
     public void turn(Direction direction) throws Exception{
+        setDirection(direction);
         af.processTurn(this);
     }
 
@@ -103,6 +116,7 @@ public abstract class AbstractTank implements Tank {
     }
 
     public void attacEagle() throws Exception {
+        System.out.println("Start attacEagle"+bf.scanQuadrant(8, 4).equals("E"));
         while (bf.scanQuadrant(8, 4).equals("E")){
             int y = this.y/64;
             int x = this.x/64;
@@ -131,6 +145,7 @@ public abstract class AbstractTank implements Tank {
             }
 
             if (bf.scanQuadrant(v,h).equals("B") || bf.scanQuadrant(v,h).equals("E")){
+                turn(direction);
                 fire();
             }
             if(((int)af.getAgressorD().getY()/64) ==v && ((int)af.getAgressorD().getX()/64)==h){
@@ -187,15 +202,11 @@ public abstract class AbstractTank implements Tank {
                 direction = Direction.RIGHT;
             }
 
-            System.out.println("direction = " + direction);
-            System.out.println("bf.scanQuadrant(v,h).equals(\"B\")" + bf.scanQuadrant(v, h).equals("B"));
-
             if (bf.scanQuadrant(v, h).equals("B") || bf.scanQuadrant(v, h).equals("E")) {
-                System.out.println("fire B");
+                turn(direction);
                 fire();
             }
-                if ((int) tank.getY() / 64 == v && (int) tank.getX() / 64 == h) {
-                    System.out.println("fire tank");
+                if ((int) tank.getY() / 64 == v && (int) tank.getX() / 64 == h) {;
                     fire();
                 }
                 if (bf.scanQuadrant(v, h).equals(" ")) {
@@ -203,10 +214,6 @@ public abstract class AbstractTank implements Tank {
                         fire();
                     }
                 }
-
-
-
-                System.out.println("move");
                 move();
             }
         }

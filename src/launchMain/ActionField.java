@@ -6,10 +6,16 @@ import tanks.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.xml.bind.SchemaOutputResolver;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 import static java.awt.Color.BLUE;
 
@@ -26,6 +32,7 @@ public class ActionField extends JPanel {
     private Bullet bullet;
     private Direction direction;
     private Registrator registrator;
+    private Map<String,String> map;
 
     void runTheGame() throws Exception {
 //          defender.fire();
@@ -39,23 +46,135 @@ public class ActionField extends JPanel {
 //
 
 
-        defender.setDirection(Direction.LEFT);
-        defender.move();
-        defender.setDirection(Direction.UP);
-        defender.move();defender.move();defender.move();
-        defender.setDirection(Direction.LEFT);
-        defender.move();defender.move();
-        defender.setDirection(Direction.UP);
-        defender.move();
-        defender.setDirection(Direction.LEFT);
-        defender.move();
-        defender.setDirection(Direction.DOWN);
-        defender.move(); defender.move();
+//        defender.setDirection(Direction.LEFT);
+//        defender.move();
+//        defender.setDirection(Direction.UP);
+//        defender.move();defender.move();defender.move();
+//        defender.setDirection(Direction.LEFT);
+//        defender.move();defender.move();
+//        defender.setDirection(Direction.UP);
+//        defender.move();
+//        defender.setDirection(Direction.LEFT);
+//        defender.move();
+//        defender.setDirection(Direction.DOWN);
+//        defender.move(); defender.move();
       //  agressorD.attacTank(defender);
         agressorE.attacEagle();
         agressorD.attacTank(defender);
     //    System.out.println(Arrays.deepToString(bf.getMapDistances()));
 
+    }
+
+    void replay()throws Exception {
+
+        File file = new File("Registrator.txt");
+        FileInputStream fis = new FileInputStream(file);
+        InputStreamReader in = new InputStreamReader(fis);
+        BufferedReader buff = new BufferedReader(in);
+        String str;
+        bf = new BattleField();
+        map = new HashMap<>();
+        frame.getContentPane().removeAll();
+        frame.getContentPane().add(this);
+        frame.pack();
+        frame.setVisible(true);
+        while ((str = buff.readLine())!=null){
+
+            if (str.indexOf(";")>0) {
+                switch (str.substring(str.indexOf("(") + 1, str.indexOf(")"))) {
+                    case "defender":
+                        map.put(str.substring((str.indexOf(")")+1) , str.indexOf(":")),  "defender");
+                        defender.setX(Integer.valueOf(str.substring((str.indexOf(":") + 1), str.indexOf("_"))));
+                        defender.setY(Integer.valueOf(str.substring((str.indexOf("_") + 1), str.indexOf(";"))));
+                        defender.setDirection(Direction.UP);
+                        defender.setBf(bf);
+                        break;
+                    case "agressorD":
+                        map.put(str.substring((str.indexOf(")")+1) , str.indexOf(":")),  "agressorD");
+                        agressorD.setX(Integer.valueOf(str.substring((str.indexOf(":") + 1), str.indexOf("_"))));
+                        agressorD.setY(Integer.valueOf(str.substring((str.indexOf("_") + 1), str.indexOf(";"))));
+                        agressorD.setDirection(Direction.LEFT);
+                        agressorD.setBf(bf);
+                        break;
+                    default:
+                        map.put(str.substring((str.indexOf(")")+1) , str.indexOf(":")),  "agressorE");
+                        agressorE.setX(Integer.valueOf(str.substring((str.indexOf(":") + 1), str.indexOf("_"))));
+                        agressorE.setY(Integer.valueOf(str.substring((str.indexOf("_") + 1), str.indexOf(";"))));
+                        agressorE.setDirection(Direction.DOWN);
+                        agressorE.setBf(bf);
+                        break;
+                }
+                continue;
+            }
+            System.out.println(str.substring(0,str.indexOf(":"))+" - "+ str.substring(str.indexOf(":")+1));
+
+replayAction(str.substring(0,str.indexOf(":")),str.substring(str.indexOf(":")+1));
+        }
+//        defender.setDirection(Direction.LEFT);
+//        defender.move();
+//        System.out.println("agressorE: "+agressorE.getX()+"_"+agressorE.getY());
+//        agressorE.attacEagle();
+//        agressorD.attacTank(defender);
+
+
+    }
+
+    public void replayAction(String tank, String action) throws Exception {
+        System.out.println("map.get(tank) - "+map.get(tank));
+
+        switch(map.get(tank)) {
+
+            case "defender":
+                if (action.contains("move")) {
+                    defender.move();
+                } else if (action.contains("Fire")) {
+                    defender.fire();
+                } else if (action.contains("LEFT")) {
+                    defender.turn(Direction.LEFT);
+                } else if (action.contains("DOWN")){
+                    defender.turn(Direction.DOWN);
+                } else if (action.contains("UP")){
+                    defender.turn(Direction.UP);
+                } else if (action.contains("RIGHT")){
+                    defender.turn(Direction.RIGHT);
+                } else {
+                        System.out.println(action + " - no identification, case:defender, replayAction");
+                } break;
+            case "agressorD":
+                if (action.contains("move")) {
+                    agressorD.move();
+                } else if (action.contains("Fire")) {
+                    agressorD.fire();
+                } else if (action.contains("LEFT")) {
+                    agressorD.turn(Direction.LEFT);
+                } else if (action.contains("DOWN")){
+                    agressorD.turn(Direction.DOWN);
+                } else if (action.contains("UP")){
+                    agressorD.turn(Direction.UP);
+                } else if (action.contains("RIGHT")){
+                    agressorD.turn(Direction.RIGHT);
+                } else {
+                    System.out.println(action + " - no identification, case:defender, replayAction");
+                }  break;
+            default :
+                if (action.contains("move")) {
+                    agressorE.move();
+                } else if (action.contains("Fire")) {
+                    agressorE.fire();
+                } else if (action.contains("LEFT")) {
+                    agressorE.turn(Direction.LEFT);
+                } else if (action.contains("DOWN")){
+                    agressorE.turn(Direction.DOWN);
+                } else if (action.contains("UP")){
+                    agressorE.turn(Direction.UP);
+                } else if (action.contains("RIGHT")){
+                    agressorE.turn(Direction.RIGHT);
+                } else {
+                    System.out.println(action + " - no identification, case:agressorE, replayAction");
+                } break;
+
+        }
+        repaint(); Thread.sleep(10);
     }
 
 
@@ -221,11 +340,11 @@ public class ActionField extends JPanel {
         return new T34(this, bf, Integer.parseInt(location.split("_")[0]), Integer.parseInt(location.split("_")[1])-64, Direction.DOWN);
     }
 
+
+    //КОНСТРУКТОР  ТУТ!!!!!!!!!!!!!!!!!!!!!!!!!!
     public ActionField() throws Exception {
 
         registrator = new Registrator();
-        registrator.addList("Start Game");
-        registrator.pushToFile();
 
         bf = new BattleField();
 
@@ -239,12 +358,16 @@ public class ActionField extends JPanel {
 
 
     void init(ActionEvent e) throws Exception {
-        System.out.println("e.getActionCommand() = "+e.getActionCommand());
        if(e.getActionCommand().equals("T34")){
            bf = new BattleField();
         defender = new T34(this, bf);
         agressorD = restartTigr();
         agressorE = restartBT7();
+
+           registrator.addList("(defender)"+defender.getName()+":"+String.valueOf(defender.getX())+"_"+String.valueOf(defender.getY())+";"+String.valueOf(defender.getDirection()));
+           registrator.addList("(agressorD)"+agressorD.getName()+":"+String.valueOf(agressorD.getX())+"_"+String.valueOf(agressorD.getY())+";"+String.valueOf(agressorD.getDirection()));
+           registrator.addList("(agressorE)"+agressorE.getName()+":"+String.valueOf(agressorE.getX())+"_"+String.valueOf(agressorE.getY())+";"+String.valueOf(agressorE.getDirection()));
+
            frame.getContentPane().removeAll();
            frame.getContentPane().add(this);
            frame.pack();
@@ -273,10 +396,17 @@ public class ActionField extends JPanel {
         frame.getContentPane().removeAll();
         gameOver = new GameOver();
         frame.getContentPane().add(gameOver);
-        System.out.println("gameOver getE = "+gameOver.getE());
         while(gameOver.getE()==null){}
-        System.out.println("gameOver getE 1 = "+gameOver.getE());
-        init(menu.getE());
+        if(gameOver.getE().getActionCommand().equals("EXIT")){
+            System.exit(0);
+        };
+        if(gameOver.getE().getActionCommand().equals("REPLAY")){
+            replay();
+            gameOver();
+        };
+        if(gameOver.getE().getActionCommand().equals("RESTART")){
+            init(menu.getE());
+        };
 
     }
 

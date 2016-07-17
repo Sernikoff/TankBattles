@@ -91,20 +91,14 @@ public class Menushka extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent i) {
 
 if(i.getActionCommand().equals("T34") || i.getActionCommand().equals("BT7") || i.getActionCommand().equals("Tiger")){
-    System.out.println( i.getActionCommand());
     f = i;
 }
         if(f!=null){
             if(i.getActionCommand().equals("START")){
                 e=f;
-                System.out.println( e.getActionCommand());
             }
         }
-
-    //    System.out.println( i.getActionCommand());
-
     }
-
     public ActionEvent getE() {
         return e;
     }

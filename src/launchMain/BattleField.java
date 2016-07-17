@@ -9,9 +9,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Random;
 
-/**
- * Created by Сергей on 14.04.2016.
- */
+
 public class BattleField implements Drowable {
     boolean COLORDED_MODE = false;
     private final int BF_WIDTH = 576;

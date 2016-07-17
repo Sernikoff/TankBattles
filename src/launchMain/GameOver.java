@@ -21,11 +21,16 @@ public class GameOver extends JPanel implements ActionListener {
         Font f = new Font("Arial", Font.PLAIN, 64);
         add(label).setFont(f);
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(2,1));
+        panel.setLayout(new GridLayout(3,1));
         panel.setBackground(Color.CYAN);
         JButton restart = new JButton("RESTART");
         restart.addActionListener(this);
         panel.add(restart);
+
+        JButton  replay = new JButton("REPLAY");
+        replay.addActionListener(this);
+        panel.add(replay);
+
         JButton exit = new JButton("EXIT");
         exit.addActionListener(this);
         panel.add(exit);
@@ -42,7 +47,12 @@ public class GameOver extends JPanel implements ActionListener {
            ee = e;
             System.out.println("e = " + e.getActionCommand());
         }
+        if(e.getActionCommand().equals("REPLAY")){
+            ee = e;
+            System.out.println("e = " + e.getActionCommand());
+        }
         if(e.getActionCommand().equals("EXIT")){
+            ee = e;
             System.out.println("e = " + e.getActionCommand());
         }
     }

@@ -32,7 +32,7 @@ public class Registrator {
             in = new OutputStreamWriter(fos);
             buff = new BufferedWriter(in);
 
-            String result = "\n";
+            String result = "";
             for (String str:list
                  ) {
                 result+=str+" "+"\r\n";
