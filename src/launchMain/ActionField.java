@@ -174,7 +174,7 @@ replayAction(str.substring(0,str.indexOf(":")),str.substring(str.indexOf(":")+1)
                 } break;
 
         }
-        repaint(); Thread.sleep(10);
+        Thread.sleep(100);
     }
 
 
@@ -272,7 +272,7 @@ replayAction(str.substring(0,str.indexOf(":")),str.substring(str.indexOf(":")+1)
             }
             covered += step;
 
-            repaint();
+
             Thread.sleep(speed);
         }
 
@@ -286,7 +286,6 @@ replayAction(str.substring(0,str.indexOf(":")),str.substring(str.indexOf(":")+1)
             if (bullet.getDirection() == Direction.UP && bullet.getBulletY() > 0) {
             while (bullet.getBulletY() > -14) {
                 bullet.updateY(-1);
-                repaint();
                 if (processInterception()) {
                     bullet.destroy(); return;
                 }
@@ -295,7 +294,6 @@ replayAction(str.substring(0,str.indexOf(":")),str.substring(str.indexOf(":")+1)
         } else if (bullet.getDirection() == Direction.DOWN &&  bullet.getBulletY()< 590) {
             while (bullet.getBulletY() < 590) {
                 bullet.updateY(1);
-                repaint();
              //   System.out.println("processInterception = "+processInterception());
                 if (processInterception()) {
                     bullet.destroy(); return;
@@ -305,7 +303,6 @@ replayAction(str.substring(0,str.indexOf(":")),str.substring(str.indexOf(":")+1)
         } else if (bullet.getDirection() == Direction.LEFT && bullet.getBulletX() > 0) {
             while (bullet.getBulletX() > -14) {
                 bullet.updateX(-1);
-                repaint();
                 if (processInterception()) {
                     bullet.destroy(); return;
                 }
@@ -314,7 +311,6 @@ replayAction(str.substring(0,str.indexOf(":")),str.substring(str.indexOf(":")+1)
         } else if (bullet.getDirection() == Direction.RIGHT && bullet.getBulletX() < 590) {
             while (bullet.getBulletX() < 590) {
                 bullet.updateX(1);
-                repaint();
                 if (processInterception()) {
                     bullet.destroy(); return;
                 }
@@ -353,7 +349,23 @@ replayAction(str.substring(0,str.indexOf(":")),str.substring(str.indexOf(":")+1)
         frame.setMinimumSize(new Dimension(bf.getBF_WIDTH(), bf.getBF_HEIGHT() + 38));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        menuGame();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    menuGame();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
+
+        while(true){
+            repaint();
+            Thread.sleep(1000/60);
+        }
     }
 
 
